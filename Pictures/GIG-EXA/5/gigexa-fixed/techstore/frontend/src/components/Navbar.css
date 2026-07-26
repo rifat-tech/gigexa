@@ -51,7 +51,8 @@
 .promo-bar span { font-weight: 700; }
 
 /* Mobile menu */
-.mobile-menu { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 16px; }
+.mobile-menu { position: fixed; top: 60px; left: 0; right: 0; max-height: calc(100vh - 60px); overflow-y: auto; background: #fff; border-bottom: 1px solid var(--border); padding: 14px 16px; z-index: 1500; box-shadow: 0 8px 24px rgba(0,0,0,.18); animation: fadeUp .15s ease; }
+/* .mobile-menu { background: #fff; border-bottom: 1px solid var(--border); padding: 14px 16px; } */
 .mobile-search { display: flex; gap: 8px; margin-bottom: 12px; }
 .mobile-links { display: flex; flex-direction: column; }
 .mobile-links a, .mobile-links button { padding: 10px 4px; font-size: 14px; color: var(--mid); border-bottom: 1px solid var(--border-light); text-align: left; background: none; }
