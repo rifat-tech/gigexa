@@ -1,0 +1,57 @@
+.pd-breadcrumb-bar { background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px 0; }
+.breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+.breadcrumb a { color: var(--primary); } .breadcrumb a:hover { text-decoration: underline; }
+.breadcrumb span:last-child { color: var(--dark); }
+
+.pd-layout { display: grid; grid-template-columns: 480px 1fr; gap: 40px; padding: 28px 0; align-items: start; }
+
+.pd-gallery { position: sticky; top: 80px; }
+.pd-main-img { background: white; border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; display: flex; align-items: center; justify-content: center; height: 420px; position: relative; }
+.pd-main-img img { max-height: 100%; max-width: 100%; object-fit: contain; }
+.pd-discount-badge { position: absolute; top: 12px; left: 12px; font-size: 13px; padding: 4px 10px; }
+.pd-thumbs { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.pd-thumb { width: 68px; height: 68px; border: 2px solid var(--border); border-radius: var(--radius); overflow: hidden; background: white; cursor: pointer; transition: var(--transition); padding: 4px; }
+.pd-thumb.active { border-color: var(--primary); }
+.pd-thumb img { width: 100%; height: 100%; object-fit: contain; }
+
+.pd-brand-badge { display: inline-block; background: var(--primary); color: white; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 2px; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 10px; }
+.pd-name { font-size: 22px; font-weight: 700; color: var(--dark); line-height: 1.35; margin-bottom: 6px; }
+.pd-sku { font-size: 12px; color: var(--muted); font-family: var(--mono); margin-bottom: 10px; }
+.pd-sku span { color: var(--mid); }
+.pd-rating { display: flex; align-items: center; gap: 8px; font-size: 13px; margin-bottom: 14px; flex-wrap: wrap; }
+.muted { color: var(--muted); }
+
+.pd-price-box { background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; margin-bottom: 16px; }
+.pd-price { font-family: var(--mono); font-size: 30px; font-weight: 700; color: var(--primary); }
+.pd-price-row { display: flex; align-items: center; gap: 10px; margin-top: 4px; flex-wrap: wrap; }
+
+.pd-meta-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+.pd-meta-item { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+.pd-meta-item span { color: var(--muted); min-width: 100px; }
+.pd-meta-item strong { color: var(--dark); }
+.pd-meta-item a strong { color: var(--primary); }
+
+.pd-short-desc { font-size: 14px; color: var(--mid); line-height: 1.7; margin-bottom: 16px; padding: 12px; background: var(--bg); border-left: 3px solid var(--primary); border-radius: 0 var(--radius) var(--radius) 0; }
+
+.pd-actions { display: flex; gap: 10px; align-items: center; margin-bottom: 16px; }
+.pd-qty { display: flex; align-items: center; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; flex-shrink: 0; }
+.pd-qty button { width: 36px; height: 44px; font-size: 18px; background: var(--bg); border: none; cursor: pointer; color: var(--dark); transition: var(--transition); }
+.pd-qty button:hover { background: var(--primary); color: white; }
+.pd-qty span { width: 44px; text-align: center; font-weight: 700; font-size: 15px; }
+
+.pd-trust { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 12px; color: var(--mid); padding: 12px; background: var(--bg); border-radius: var(--radius); border: 1px solid var(--border); }
+.pd-trust div { display: flex; align-items: center; gap: 4px; }
+
+.pd-tabs-section { background: white; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 28px 0; margin-top: 8px; }
+.pd-tabs { display: flex; border-bottom: 2px solid var(--border); margin-bottom: 20px; }
+.pd-tab { padding: 10px 20px; font-size: 14px; font-weight: 600; color: var(--muted); border: none; background: none; cursor: pointer; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: var(--transition); }
+.pd-tab.active { color: var(--primary); border-bottom-color: var(--primary); }
+.pd-tab:hover { color: var(--dark); }
+.pd-tab-body { max-width: 800px; }
+
+.spec-table { width: 100%; border-collapse: collapse; }
+.spec-table tr:nth-child(even) td { background: var(--bg); }
+.spec-table td { padding: 10px 14px; font-size: 14px; border-bottom: 1px solid var(--border-light); }
+.spec-key { font-weight: 600; color: var(--mid); width: 180px; }
+
+@media(max-width:900px) { .pd-layout { grid-template-columns: 1fr; } .pd-gallery { position: static; } .pd-main-img { height: 280px; } }

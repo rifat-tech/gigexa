@@ -1,0 +1,16 @@
+.footer { background: var(--dark); color: rgba(255,255,255,.75); }
+.footer-top { padding: 48px 0 36px; border-bottom: 1px solid rgba(255,255,255,.1); }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr; gap: 32px; }
+.footer-logo { display: block; margin-bottom: 12px; }
+.footer-brand-col p { font-size: 13px; line-height: 1.7; color: rgba(255,255,255,.55); margin-bottom: 14px; }
+.footer-contact { display: flex; flex-direction: column; gap: 6px; font-size: 13px; color: rgba(255,255,255,.65); }
+.footer-col h4 { font-size: 12px; font-weight: 700; color: white; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; }
+.footer-col a { display: block; font-size: 13px; color: rgba(255,255,255,.55); margin-bottom: 8px; transition: color .2s; }
+.footer-col a:hover { color: white; }
+.footer-payment { background: rgba(0,0,0,.3); padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.08); }
+.footer-payment-inner { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; font-size: 13px; color: rgba(255,255,255,.55); }
+.pay-chip { padding: 3px 10px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.15); border-radius: 3px; font-size: 12px; font-weight: 600; color: rgba(255,255,255,.7); }
+.footer-bottom { padding: 16px 0; }
+.footer-bottom-inner { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; font-size: 12px; color: rgba(255,255,255,.35); }
+@media(max-width:1024px) { .footer-grid { grid-template-columns: 1fr 1fr 1fr; } }
+@media(max-width:600px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-bottom-inner { flex-direction: column; text-align: center; } }
