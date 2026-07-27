@@ -156,7 +156,8 @@
 }
 .chat-msg.from-customer .chat-msg-bubble { background: #D9FDD3; border-top-right-radius: 2px; }
 .chat-msg.from-admin .chat-msg-bubble { background: #ffffff; border-top-left-radius: 2px; }
-.chat-msg-time { position: absolute; right: 8px; bottom: 4px; font-size: 9.5px; color: #667085; }
+.chat-msg-time { display: inline-block; float: right; margin: 4px 0 -2px 10px; font-size: 9.5px; color: #667085; position: static; }
+/* .chat-msg-time { position: absolute; right: 8px; bottom: 4px; font-size: 9.5px; color: #667085; } */
 .chat-hint { text-align: center; font-size: 11px; color: #667085; margin-top: 2px; }
 
 /* Composer */
@@ -178,4 +179,8 @@
 /* On mobile, full-screen the chat above everything */
 @media(max-width:480px) {
   .chat-window { width: 100vw; height: 100dvh; max-height: none; right: 0; bottom: 0; border-radius: 0; }
+  .chat-fab.open { display: none; }
 }
+/* @media(max-width:480px) {
+  .chat-window { width: 100vw; height: 100dvh; max-height: none; right: 0; bottom: 0; border-radius: 0; }
+} */
